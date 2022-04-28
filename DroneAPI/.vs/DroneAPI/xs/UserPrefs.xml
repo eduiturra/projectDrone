@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{DA58346A-4520-46E1-8A87-DC0B29649A8D}|Default">
+  <MonoDevelop.Ide.ItemProperties.DroneAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../dotnet/sdk/5.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets">
+    <Files>
+      <File FileName="Model/DroneDbContext.cs" Line="26" Column="2" />
+      <File FileName="../../../dotnet/sdk/5.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="54" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DroneAPI" expanded="True">
+            <Node name="DroneAPI" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="DroneDbContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

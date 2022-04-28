@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/karibu/.dotnet/store/|arch|/|tfm|",
+      "/home/karibu/.nuget/packages"
+    ]
+  }
+}
