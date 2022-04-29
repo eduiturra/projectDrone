@@ -36,7 +36,7 @@ namespace project
         public void DroneLoadMedicinesDTO_ModelValidation_Test(String serie, String name,decimal weight, String code, String image, bool valid)
         {
             var sut = new DroneLoadMedicinesDTO();
-            sut.Serie = serie;
+            sut.DroneId = serie;
             sut.Weight = weight;
             sut.Name = name;
             sut.Code = code;

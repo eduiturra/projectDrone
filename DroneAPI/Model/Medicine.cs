@@ -10,8 +10,7 @@ namespace DroneAPI.Model
         public decimal Weight { get; set; }
         public String Code { get; set; }
         public String Image { get; set; }
-        public int DroneId { get; set; }
-
+        public String DroneId { get; set; }
         public Drone Drone { get; set; }
     }
 }

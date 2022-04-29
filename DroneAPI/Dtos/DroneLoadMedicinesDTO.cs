@@ -5,10 +5,14 @@ namespace DroneAPI.Dtos
 {
     public class DroneLoadMedicinesDTO
     {
-        public String Serie { get; set; }
+        [Required]
+        public String DroneId { get; set; }
+        [Required]
         [RegularExpression(@"^[a-zA-Z0-9_-]+$",ErrorMessage="Permitido solo letras, números, ‘-‘, ‘_’")]
          public String Name { get; set; }
+        [Required]
         public decimal Weight { get; set; }
+        [Required]
         [RegularExpression(@"^[A-Z0-9_]+$",ErrorMessage="Permitido solo letra mayúscula, guión bajo y números")]
         public String Code { get; set; }
         public String Image { get; set; }

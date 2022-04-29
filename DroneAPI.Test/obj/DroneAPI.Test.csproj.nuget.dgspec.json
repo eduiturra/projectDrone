@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/karibu/Escritorio/project/DroneAPI.Test/DroneAPI.Test.csproj": {}
+    "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI.Test\\DroneAPI.Test.csproj": {}
   },
   "projects": {
-    "/home/karibu/Escritorio/project/DroneAPI.Test/DroneAPI.Test.csproj": {
+    "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI.Test\\DroneAPI.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/karibu/Escritorio/project/DroneAPI.Test/DroneAPI.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI.Test\\DroneAPI.Test.csproj",
         "projectName": "DroneAPI.Test",
-        "projectPath": "/home/karibu/Escritorio/project/DroneAPI.Test/DroneAPI.Test.csproj",
-        "packagesPath": "/home/karibu/.nuget/packages/",
-        "outputPath": "/home/karibu/Escritorio/project/DroneAPI.Test/obj/",
+        "projectPath": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI.Test\\DroneAPI.Test.csproj",
+        "packagesPath": "C:\\Users\\Eduardo Iturra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/karibu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Eduardo Iturra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/karibu/Escritorio/project/DroneAPI/DroneAPI.csproj": {
-                "projectPath": "/home/karibu/Escritorio/project/DroneAPI/DroneAPI.csproj"
+              "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\DroneAPI.csproj": {
+                "projectPath": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\DroneAPI.csproj"
               }
             }
           }
@@ -74,26 +76,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.213\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/karibu/Escritorio/project/DroneAPI/DroneAPI.csproj": {
+    "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\DroneAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/karibu/Escritorio/project/DroneAPI/DroneAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\DroneAPI.csproj",
         "projectName": "DroneAPI",
-        "projectPath": "/home/karibu/Escritorio/project/DroneAPI/DroneAPI.csproj",
-        "packagesPath": "/home/karibu/.nuget/packages/",
-        "outputPath": "/home/karibu/Escritorio/project/DroneAPI/obj/",
+        "projectPath": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\DroneAPI.csproj",
+        "packagesPath": "C:\\Users\\Eduardo Iturra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduardo Iturra\\Desktop\\projectDrone\\projectDrone\\DroneAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/karibu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Eduardo Iturra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -157,7 +161,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.213\\RuntimeIdentifierGraph.json"
         }
       }
     }

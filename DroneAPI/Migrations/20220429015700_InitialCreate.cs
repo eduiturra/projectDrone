@@ -11,11 +11,10 @@ namespace DroneAPI.Migrations
                 name: "Drones",
                 columns: table => new
                 {
-                    NumSeries = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Model = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NumSeries = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Model = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     WeightLimit = table.Column<int>(type: "int", nullable: false),
-                    Capacity = table.Column<int>(type: "int", nullable: false),
+                    Capacity = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     State = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -30,10 +29,10 @@ namespace DroneAPI.Migrations
                     MedicineId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Serie = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Weight = table.Column<int>(type: "int", nullable: false),
+                    Weight = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Code = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DroneId = table.Column<int>(type: "int", nullable: false)
+                    DroneId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -43,7 +42,7 @@ namespace DroneAPI.Migrations
                         column: x => x.DroneId,
                         principalTable: "Drones",
                         principalColumn: "NumSeries",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

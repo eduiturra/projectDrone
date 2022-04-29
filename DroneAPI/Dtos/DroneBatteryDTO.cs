@@ -4,8 +4,8 @@ namespace DroneAPI.Dtos
 {
     public class DroneBatteryDTO
     {
-        public int numSeries { get; set; }
-        public String modelo { get; set; }
-        public int capacity { get; set; }
+        public String numSeries { get; set; }
+        public String Model { get; set; }
+        public decimal Capacity { get; set; }
     }
 }

@@ -29,22 +29,22 @@ namespace DroneAPI.Controllers
             return await _droneServices.SaveDrone(registerDTO);
         }
 
-        [HttpGet("")]
-        public async Task<ActionResult<GetDroneDTO>> GetDronesLoad([FromBody] GetDroneDTO droneDTO)
-        {
-            return new GetDroneDTO();
-        }
+         [HttpGet("load")]
+         public async Task<ActionResult<List<Drone>>> GetDronesLoad()
+         {
+            return await _droneServices.GetDronesLoad();
+         }
 
-        [HttpGet("battery")]
-        public async Task<ActionResult<DroneBatteryDTO>> GetDroneBattery(String serie)
-        {
-            return new DroneBatteryDTO();
-        }
+         [HttpGet("battery/{serie}")]
+         public async Task<ActionResult<DroneBatteryDTO>> GetDroneBattery(String serie)
+         {
+             return await _droneServices.GetDroneBattery(serie);
+         }
 
-        [HttpGet("medicine")]
-        public async Task<ActionResult<DroneWeightMedicineDTO>> GetDroneWeightMedicine(String serie)
-        {
-            return new DroneWeightMedicineDTO();
-        }
+         [HttpGet("medicine/{serie}")]
+         public async Task<ActionResult<DroneWeightMedicineDTO>> GetDroneWeightMedicine(String serie)
+         {
+             return await _droneServices.GetDroneWeightMedicine(serie);
+         }
     }
 }

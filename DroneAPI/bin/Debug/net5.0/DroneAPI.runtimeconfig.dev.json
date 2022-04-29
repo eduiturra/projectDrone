@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/karibu/.dotnet/store/|arch|/|tfm|",
-      "/home/karibu/.nuget/packages"
+      "C:\\Users\\Eduardo Iturra\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Eduardo Iturra\\.nuget\\packages"
     ]
   }
 }

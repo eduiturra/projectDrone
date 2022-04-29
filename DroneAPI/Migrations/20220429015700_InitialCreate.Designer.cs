@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DroneAPI.Migrations
 {
     [DbContext(typeof(DroneDbContext))]
-    [Migration("20220428062426_InitialCreate")]
+    [Migration("20220429015700_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,16 +23,13 @@ namespace DroneAPI.Migrations
 
             modelBuilder.Entity("DroneAPI.Model.Drone", b =>
                 {
-                    b.Property<int>("NumSeries")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                    b.Property<string>("NumSeries")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Capacity")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Capacity")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Model")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
@@ -55,8 +52,8 @@ namespace DroneAPI.Migrations
                     b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DroneId")
-                        .HasColumnType("int");
+                    b.Property<string>("DroneId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
@@ -67,8 +64,8 @@ namespace DroneAPI.Migrations
                     b.Property<string>("Serie")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Weight")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Weight")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("MedicineId");
 
@@ -81,9 +78,7 @@ namespace DroneAPI.Migrations
                 {
                     b.HasOne("DroneAPI.Model.Drone", "Drone")
                         .WithMany("Medicines")
-                        .HasForeignKey("DroneId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DroneId");
 
                     b.Navigation("Drone");
                 });

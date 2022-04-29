@@ -4,9 +4,7 @@ namespace DroneAPI.Dtos
 {
     public class DroneWeightMedicineDTO
     {
-        public int numSeries { get; set; }
-        public String modelo { get; set; }
-        public int weight { get; set; }
-
+        public String NumSeries { get; set; }
+        public decimal weightTotal { get; set; }
     }
 }

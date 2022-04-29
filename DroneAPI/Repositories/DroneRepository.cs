@@ -22,7 +22,12 @@ namespace DroneAPI.Repositories
 
         public Task<Drone> Get(String numSeries)
         {
-            return _context.Drones.FirstOrDefaultAsync(a => a.NumSeries == numSeries);
+            return _context.Drones.Include(a=>a.Medicines).FirstOrDefaultAsync(a => a.NumSeries == numSeries);
+        }
+
+        public Task<List<Drone>> GetByState(String state)
+        {
+            return _context.Drones.Where(a => a.State == state).ToListAsync();
         }
 
     }

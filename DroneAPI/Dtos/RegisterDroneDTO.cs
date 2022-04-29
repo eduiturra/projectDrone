@@ -29,14 +29,14 @@ namespace DroneAPI.Dtos
             List<String> modelList = new List<String>(){"peso ligero", "peso medio", "peso crucero", "peso pesado"};
             if(!modelList.Any(a => a == Model)){
                 yield return new ValidationResult(
-                    $"El modelo tiene que ser: " + modelList.ToString());
+                    $"El modelo tiene que ser: " + String.Join(",", modelList));
             }
 
             List<String> stateList = new List<String>(){"INACTIVO", "CARGANDO", "CARGADO", "ENTREGANDO CARGA", "CARGA ENTREGADA",
 "REGRESANDO"};
             if(!stateList.Any(a => a == State)){
                 yield return new ValidationResult(
-                    $"El estado tiene que ser: " + stateList.ToString());
+                    $"El estado tiene que ser: " + String.Join(",", stateList));
             }
 
             if(WeightLimit > 500){

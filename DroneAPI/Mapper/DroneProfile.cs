@@ -9,7 +9,10 @@ namespace DroneAPI.Mapper
     {
         public DroneProfile()
         {
-             CreateMap<RegisterDroneDTO, Drone>();
+            CreateMap<RegisterDroneDTO, Drone>();
+            CreateMap<Drone, DroneBatteryDTO>();
+            CreateMap<Drone, DroneWeightMedicineDTO>();
+            CreateMap<DroneLoadMedicinesDTO, Medicine>();
         }
-    }
+    } 
 }

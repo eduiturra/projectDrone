@@ -14,9 +14,18 @@ namespace DroneAPI.Repositories
             _context = context;
         }
 
-        public Task<Medicine> Get(Guid numSeries)
+        public Task<List<Medicine>> GetBySerie(String numSeries)
         {
-            return _context.Medicines.FirstOrDefaultAsync(a => a.MedicineId == numSeries);
+            return _context.Medicines.Where(a => a.DroneId == numSeries).ToListAsync();
         }
+
+        public async Task<Medicine> Save(Medicine model)
+        {
+            await _context.Medicines.AddAsync(model);
+            await _context.SaveChangesAsync();
+            return model;
+        }
+
+        
     }
 }

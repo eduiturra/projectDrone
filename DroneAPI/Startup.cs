@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using DroneAPI.Model;
 using Microsoft.EntityFrameworkCore;
 using DroneAPI.Repositories;
+using DroneAPI.Services;
 namespace DroneAPI
 {
     public class Startup
@@ -29,6 +30,9 @@ namespace DroneAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IDroneRepository, DroneRepository>();
+            services.AddTransient<IMedicineRepository, MedicineRepository>();
+            services.AddTransient<IDroneServices, DroneServices>();
+            services.AddTransient<IMedicineServices, MedicineServices>();
             services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<DroneDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
